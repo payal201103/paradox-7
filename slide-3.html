@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animated slider</title>
+    <style>
+        .banner1,
+        .banner2,
+        .banner3,
+        .banner4 {
+            height: 100vh;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        img {
+            width: 120%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            overflow: hidden;
+            animation: zoom-out 3s linear infinite;
+        }
+
+        @keyframes zoom-out {
+            100% {
+                width: 100%;
+            }
+        }
+
+        .text {
+            width: 600px;
+            position: absolute;
+            top: 200px;
+            left: 100px;
+            color: #fff;
+            animation: textup 12s linear infinite;
+            transform: translateY(100px);
+        }
+
+        @keyframes textup {
+            10% {
+                transform: translateY(0px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        .text h1 {
+            margin-bottom: 20px;
+
+        }
+
+        .banner1 {
+            animation: slide1 12s linear infinite;
+        }
+
+        .banner2 {
+            animation: slide2 12s linear infinite;
+        }
+
+        .banner3 {
+            animation: slide3 12s linear infinite;
+        }
+
+        .banner4 {
+            animation: slide4 12s linear infinite;
+        }
+
+        @keyframes slide1 {
+            0% {
+                visibility: visible;
+            }
+
+            25% {
+                visibility: hidden;
+            }
+
+            50% {
+                visibility: hidden;
+            }
+
+            75% {
+                visibility: hidden;
+            }
+
+            100% {
+                visibility: visible;
+            }
+        }
+
+        @keyframes slide2 {
+            0% {
+                visibility: hidden;
+            }
+
+            25% {
+                visibility: hidden;
+            }
+
+            50% {
+                visibility: visible;
+            }
+
+            75% {
+                visibility: hidden;
+            }
+
+            100% {
+                visibility: hidden;
+            }
+        }
+
+        @keyframes slide3 {
+            0% {
+                visibility: hidden;
+            }
+
+            25% {
+                visibility: hidden;
+            }
+
+            50% {
+                visibility: hidden;
+            }
+
+            75% {
+                visibility: visible;
+            }
+
+            100% {
+                visibility: hidden;
+            }
+        }
+
+        @keyframes slide4 {
+            0% {
+                visibility: hidden;
+            }
+
+            25% {
+                visibility: hidden;
+            }
+
+            50% {
+                visibility: hidden;
+            }
+
+            75% {
+                visibility: hidden;
+            }
+
+            100% {
+                visibility: visible;
+            }
+        }
+
+        .box-1 {
+            animation-delay: 0s;
+        }
+
+        .box-2 {
+            animation-delay: 3s;
+        }
+
+        .box-3 {
+            animation-delay: 6s;
+        }
+
+        .box-4 {
+            animation-delay: 9s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner1">
+        <img src="https://images.unsplash.com/photo-1572452571879-3d67d5b2a39f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <div class="text box-1">
+            <h1>BIKE RIDE</h1>
+
+        </div>
+    </div>
+    <div class="banner2">
+        <img src="https://images.unsplash.com/photo-1609128231746-356e747a53bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1769&q=80"
+            alt="">
+        <div class="text box-2">
+            <h1>HORSE RIDE</h1>
+
+        </div>
+    </div>
+    <div class="banner3">
+        <img src="https://images.unsplash.com/photo-1550242499-b5171f56de56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE4fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <div class="text box-3">
+            <h1>CAR RIDE</h1>
+
+        </div>
+    </div>
+    <div class="banner4">
+        <img src="https://images.unsplash.com/photo-1534787238916-9ba6764efd4f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cmlkZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <div class="text box-4">
+            <h1> RIDER</h1>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
